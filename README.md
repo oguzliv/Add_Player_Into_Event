@@ -13,15 +13,17 @@ the goal of the project, please ignore these kinf of logical mistakes.
   I need to add your IP Address into whitelist.</li>
   <li>After you run the application and resolve the issues with database, just sent some requests with Postman : </li>
     <ul>
-      <li><b>http://127.0.0.1:8000/auth/signin</b></li>
-      <li><b>http://127.0.0.1:8000/auth/login</b></li>
-      <li><b>http://127.0.0.1:8000/api/joinEvent/63b0427e5d7eca04cb4de6db</b></li>
+      <li><b>http://127.0.0.1:8000/auth/signin</b> : Createa a new user with a new username, password and level</li>
+      <li><b>http://127.0.0.1:8000/auth/login</b>: Login with newly created users. After login is successfull, use the returned token as Bearer Token</li>
+      <li><b>http://127.0.0.1:8000/api/joinEvent/63b0427e5d7eca04cb4de6db</b>: After authorize the new user, just send the request in to this endpoint</li>
     </ul>
   <li>I already share my postman collection with you, you can use it or contact me whenever you want</li>
 </ol>
 
 <h1>Database Design</h1>
 <ul>
+  <li>I decided to store data into MongoDB. This was my personal choice. All the operations can be done in PostgreSQL,MySQL or Oracle aswell. Main 
+  bottle neck of the design was relating Event,Group and User entities.</li>
   <li>I created 2 collections : Group and User. Since we acquire event_id from query string and event object's relations with others,
   I decided not to store Events in a collection for this assignment.</li>
   <li>Group Document : {_id: ObjectId, event_id: ObjectId, category: String}</li>
@@ -55,3 +57,11 @@ the goal of the project, please ignore these kinf of logical mistakes.
   <li>Query the final user table with the group id in which user recently joined</li>
   <li>Return group id and the user id's in json format, which is the result of the our final query</li>
 </ol>
+
+<h1> Further developemnts</h1>
+  <ul>
+  <li>For the user authentication, I did not go over many use cases. Login part can be improved as encrypting user password and checking the user's registiration if its already exist in the database</li>
+  <li>For the sake reducing the load in the server, after login, more features of the user can be stored in the JWT.</li>
+  <li>For the sake of design, It would better if the relations are established according to DBRefs of MongoDB. It would reduce the size of boiler code</li>
+  </ul>
+
