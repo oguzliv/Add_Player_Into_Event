@@ -72,7 +72,7 @@ const levelDecider = (level) => {
         if(level < 20){
             return "Bronze"
         }
-        else if (level >= 20 && level < 49){
+        else if (level >= 20 && level < 50){
             return "Silver";
         }
         else{
