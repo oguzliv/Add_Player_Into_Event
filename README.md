@@ -7,7 +7,8 @@ mistakes such as when you are registering, you have to mention your level in the
 the goal of the project, please ignore these kinf of logical mistakes.
 
 <h1>How to make it work</h1>
-<ol>
+<ol> 
+  <li>You can find the databsa<e string with credentials in the .env file. That's why I am not providing thses explicitly.</li>
   <li>All you have to do is, after pulling the code on to your local computer, just run the command <b>npm run start</b></li>
   <li>You may encounter some database issues when you try to access it. I deployed database into Atlassian cloud, Mongo DB cluster. If you want to access it just let me know, 
   I need to add your IP Address into whitelist.</li>
