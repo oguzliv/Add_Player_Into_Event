@@ -17,7 +17,7 @@ router.post('/joinEvent/:id', async (req,res) => {
             // checking if there are any groups in the event for user's current level
             const groupsOfEvent = await Group.find({$and: [{event_id : eventId}, {category: levelDecider(user.level)}]});
 
-            //if there is no group for user's category or if there is no group in the event
+            //if there is no group for user's level or if there is no group in the event
             if(groupsOfEvent.length == 0){
                 //create new group and update user group id column
                 const newGroup = new Group({
@@ -30,9 +30,7 @@ router.post('/joinEvent/:id', async (req,res) => {
             }
             //If there is more than 0 group
             if(groupsOfEvent.length > 0){
-                console.log("CHECKING THE GROUPS IN THE EVENT FOR THE USER")
                 for(let i = 0; i<groupsOfEvent.length; i++){
-                    console.log(groupsOfEvent[i]);
                     const usersInTheGroup = await User.find({group_id:groupsOfEvent[i]._id});
 
                     if(usersInTheGroup.length <= 20){
