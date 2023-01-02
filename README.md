@@ -4,7 +4,7 @@ In this working directory, I demonstrate how to design a backend according to gi
 Before mentioning the algorithm phase, I added a authentication middleware in order to register a user,
 and login as a user in order to get his/her credentials from cookie. Ofcourse , there are some logical 
 mistakes such as when you are registering, you have to mention your level in the game. For the sake of
-the goal of the project, please ignore these kinf of logical mistakes.
+the goal of the project, I ignored these kind of logical mistakes.
 
 <h1>How to make it work</h1>
 <ol> 
