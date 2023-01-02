@@ -45,7 +45,7 @@ the goal of the project, please ignore these kinf of logical mistakes.
   <li>If user not exists in the event : </li>
     <ol>
       <li>Checking if there is a suitable group with a category according to user's level</li>
-      <li>If there are any groups suitable for the user, then create new group, and update user document accordingly</li>
+      <li>If there are no groups suitable for the user, then create new group, and update user document accordingly</li>
       <li>If there are some groups suitable for user </li>
       <ol>
         <li>Check if there are any group with less than 20 users.</li>
@@ -56,7 +56,7 @@ the goal of the project, please ignore these kinf of logical mistakes.
       </ol>
     </ol>
   <li>Query the final user table with the group id in which user recently joined</li>
-  <li>Return group id and the user id's in json format, which is the result of the our final query</li>
+  <li>Return group id and the user id's in json format, which is the result of the our final query, response of our request.</li>
 </ol>
 
 <h1> Further developemnts</h1>
