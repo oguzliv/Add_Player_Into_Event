@@ -30,9 +30,9 @@ the goal of the project, I ignored these kind of logical mistakes.
   <li>Group Document : {_id: ObjectId, event_id: ObjectId, category: String}</li>
   <li>User Document : {_id: ObjectId, username: String, password: String, group_id: ObjectId, event_id: ObjectId, level:Integer}</li>
   <li>I already shared Users and Groups documents that I used for this task in the email in JSON format.</li>
-  <li>Event has many Groups</li>
-  <li>Group has many Users</li>
-  <li>Event has many Users</li>
+  <li>One Event has many Groups</li>
+  <li>One Group has many Users</li>
+  <li>One Event has many Users</li>
   <li>I persisted database according to relations mentioned above. I persisted everything manually. As a better practice, It would be better to use DBRef
   concepts, but I have very limited knowledge on those.I decided to reference Id's of the documents to achieve one-to-many relationships. Username and password for the user
   documents are only for achieving authentication process, which is for reading credentials(id, username) from JWT token</li>
