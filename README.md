@@ -13,9 +13,9 @@ the goal of the project, please ignore these kinf of logical mistakes.
   I need to add your IP Address into whitelist.</li>
   <li>After you run the application and resolve the issues with database, just sent some requests with Postman : </li>
     <ul>
-      <li><b>http://127.0.0.1:8000/auth/signin</b> : Createa a new user with a new username, password and level</li>
-      <li><b>http://127.0.0.1:8000/auth/login</b>: Login with newly created users. After login is successfull, use the returned token as Bearer Token</li>
-      <li><b>http://127.0.0.1:8000/api/joinEvent/63b0427e5d7eca04cb4de6db</b>: After authorize the new user, just send the request in to this endpoint</li>
+      <li><b>http://127.0.0.1:8000/auth/signin</b> : Createa a new user with a new username, password and level in the request body</li>
+      <li><b>http://127.0.0.1:8000/auth/login</b>: Login with newly created user with sendin username and password in the request body. After login is successfull, use the returned token as Bearer Token</li>
+      <li><b>http://127.0.0.1:8000/api/joinEvent/63b0427e5d7eca04cb4de6db</b>: After authorize the new user, just send the request in to this endpoint. Id in the request url is for eventId.</li>
     </ul>
   <li>I already share my postman collection with you, you can use it or contact me whenever you want</li>
 </ol>
@@ -61,7 +61,7 @@ the goal of the project, please ignore these kinf of logical mistakes.
 <h1> Further developemnts</h1>
   <ul>
   <li>For the user authentication, I did not go over many use cases. Login part can be improved as encrypting user password and checking the user's registiration if its already exist in the database</li>
-  <li>For the sake reducing the load in the server, after login, more features of the user can be stored in the JWT.</li>
+  <li>For the sake reducing the load in the server, after login, more features of the user can be stored in the JWT. Also there are some operations to counting users in the groups. In order to reduce the code complexity, size of the group can be stoed in the DB aswell.</li>
   <li>For the sake of design, It would better if the relations are established according to DBRefs of MongoDB. It would reduce the size of boiler code</li>
   </ul>
 
