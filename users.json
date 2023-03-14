@@ -1,0 +1,127 @@
+[{
+  "_id": {
+    "$oid": "63b1f15136abe8ef0ecd71f4"
+  },
+  "username": "oguz",
+  "password": "1234",
+  "group_id": {
+    "$oid": "63b042df5d7eca04cb4de6dd"
+  },
+  "event_id": {
+    "$oid": "63b0427e5d7eca04cb4de6db"
+  },
+  "level": 19,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b207703ad703451d8b048f"
+  },
+  "username": "oguz123",
+  "password": "1234",
+  "group_id": {
+    "$oid": "63b042df5d7eca04cb4de6dd"
+  },
+  "event_id": {
+    "$oid": "63b0427e5d7eca04cb4de6db"
+  },
+  "level": 11,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b20a3596ad4d182fc0a149"
+  },
+  "username": "asdasdasd",
+  "password": "1234",
+  "group_id": {
+    "$oid": "63b20d0da57c83d77c052e05"
+  },
+  "event_id": {
+    "$oid": "63b0427e5d7eca04cb4de6db"
+  },
+  "level": 26,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b20d9d27322df076b258f8"
+  },
+  "username": "deneme",
+  "password": "1234",
+  "group_id": {
+    "$oid": "63b20d0da57c83d77c052e05"
+  },
+  "event_id": {
+    "$oid": "63b0427e5d7eca04cb4de6db"
+  },
+  "level": 38,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b2103653a693408f3395b2"
+  },
+  "username": "deneme123",
+  "password": "1234",
+  "group_id": {
+    "$oid": "63b042df5d7eca04cb4de6dd"
+  },
+  "event_id": {
+    "$oid": "63b0427e5d7eca04cb4de6db"
+  },
+  "level": 8,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b210e5d3087b6d81f95266"
+  },
+  "username": "trial",
+  "password": "1234",
+  "group_id": {
+    "$oid": "63b210ffd3087b6d81f9526b"
+  },
+  "event_id": {
+    "$oid": "63b0427e5d7eca04cb4de6db"
+  },
+  "level": 68,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b21127d3087b6d81f9526f"
+  },
+  "username": "trial123",
+  "password": "1234",
+  "group_id": {
+    "$oid": "63b042df5d7eca04cb4de6dd"
+  },
+  "event_id": {
+    "$oid": "63b0427e5d7eca04cb4de6db"
+  },
+  "level": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b2145b4a1ecc5ead0ceb4d"
+  },
+  "username": "trial456",
+  "password": "1234",
+  "group_id": {
+    "$oid": "63b042df5d7eca04cb4de6dd"
+  },
+  "event_id": {
+    "$oid": "63b0427e5d7eca04cb4de6db"
+  },
+  "level": 6,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b21a9a59b34ea26ba68b7d"
+  },
+  "username": "oguzdeneme",
+  "password": "1234",
+  "group_id": {
+    "$oid": "63b042df5d7eca04cb4de6dd"
+  },
+  "event_id": {
+    "$oid": "63b0427e5d7eca04cb4de6db"
+  },
+  "level": 15,
+  "__v": 0
+}]

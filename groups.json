@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "63b042df5d7eca04cb4de6dd"
+  },
+  "event_id": {
+    "$oid": "63b0427e5d7eca04cb4de6db"
+  },
+  "category": "Bronze",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b20d0da57c83d77c052e05"
+  },
+  "event_id": {
+    "$oid": "63b0427e5d7eca04cb4de6db"
+  },
+  "category": "Silver",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b210ffd3087b6d81f9526b"
+  },
+  "event_id": {
+    "$oid": "63b0427e5d7eca04cb4de6db"
+  },
+  "category": "Gold",
+  "__v": 0
+}]
